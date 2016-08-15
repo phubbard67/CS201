@@ -31,25 +31,25 @@ int main(void)
 			for(ptr = array; ptr < arraySize; ptr+=8){
 			sum = *ptr;
 			sum = sum + sum;
-			ptr = ptr + 1;
+			ptr = ptr + 2;
 			sum = *ptr;
 			sum = sum + sum;
-			ptr = ptr + 1;
+			ptr = ptr + 3;
 			sum = *ptr;
 			sum = sum + sum;
-			ptr = ptr + 1;
+			ptr = ptr + 4;
 			sum = *ptr;
 			sum = sum + sum;
-			ptr = ptr + 1;
+			ptr = ptr + 5;
 			sum = *ptr;
 			sum = sum + sum;
-			ptr = ptr + 1;
+			ptr = ptr + 6;
 			sum = *ptr;
 			sum = sum + sum;
-			ptr = ptr + 1;
+			ptr = ptr + 7;
 			sum = *ptr;
 			sum = sum + sum;
-			ptr = ptr + 1;
+			ptr = ptr + 8;
 			sum = *ptr;
 			sum = sum + sum;
 			}
