@@ -34,17 +34,17 @@ int main(void)
 
 		// You can change anything between this comment ...
 		
-			for(ptr = array; ptr < arraySize; ptr = ptr + 23){
+			for(ptr = array; ptr < arraySize; ptr = ptr + 30){
 				sum = sum + *ptr + *(ptr + 1) + *(ptr + 2) + *(ptr + 3);
 				sumTwo = sumTwo + *(ptr + 4) + *(ptr + 5) + *(ptr + 6);
-				sumThree = sumThree + *(ptr + 7) + *(ptr + 8);
-				sumFour = sumFour + *(ptr + 9) + *(ptr + 10);
-				sumFive = sumFive + *(ptr + 11) + *(ptr + 12);
-				sumSix = sumSix + *(ptr + 13) + *(ptr + 14);
-				sumSeven = sumSeven + *(ptr + 15) + *(ptr + 16);
-				sumEight = sumEight + *(ptr + 17) + *(ptr + 18);
-				sumNine = sumNine + *(ptr + 19) + *(ptr + 20);
-				sumTen = sumTen + *(ptr + 21) + *(ptr + 22);
+				sumThree = sumThree + *(ptr + 7) + *(ptr + 8) + *(ptr + 9);
+				sumFour = sumFour + *(ptr + 10) + *(ptr + 11);
+				sumFive = sumFive + *(ptr + 12) + *(ptr + 13) + *(ptr + 14);
+				sumSix = sumSix + *(ptr + 15) + *(ptr + 16) + *(ptr + 17);
+				sumSeven = sumSeven + *(ptr + 18) + *(ptr + 19) + *(ptr + 20);
+				sumEight = sumEight + *(ptr + 21) + *(ptr + 22) + *(ptr + 23);
+				sumNine = sumNine + *(ptr + 24) + *(ptr + 25) + *(ptr + 26);
+				sumTen = sumTen + *(ptr + 27) + *(ptr + 28) + *(ptr + 29);
 				
 			}
 		// ... and this one. But your inner loop must do the same
