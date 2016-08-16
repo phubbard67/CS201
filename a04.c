@@ -22,7 +22,6 @@ int main(void)
 	double		sumSeven = 0;
 	double		sumEight = 0;
 	double		sumNine = 0;
-	double		sumTen = 0;
 	double		*ptr;
 	double		*arraySize = &array[ARRAY_SIZE];
 	// ... and this one.
@@ -34,7 +33,7 @@ int main(void)
 
 		// You can change anything between this comment ...
 		
-			for(ptr = array; ptr < arraySize; ptr = ptr + 30){
+			for(ptr = array; ptr < arraySize; ptr = ptr + 25){
 				sum = sum + *ptr + *(ptr + 1) + *(ptr + 2) + *(ptr + 3);
 				sumTwo = sumTwo + *(ptr + 4) + *(ptr + 5) + *(ptr + 6);
 				sumThree = sumThree + *(ptr + 7) + *(ptr + 8) + *(ptr + 9);
@@ -42,9 +41,8 @@ int main(void)
 				sumFive = sumFive + *(ptr + 12) + *(ptr + 13) + *(ptr + 14);
 				sumSix = sumSix + *(ptr + 15) + *(ptr + 16) + *(ptr + 17);
 				sumSeven = sumSeven + *(ptr + 18) + *(ptr + 19) + *(ptr + 20);
-				sumEight = sumEight + *(ptr + 21) + *(ptr + 22) + *(ptr + 23);
-				sumNine = sumNine + *(ptr + 24) + *(ptr + 25) + *(ptr + 26);
-				sumTen = sumTen + *(ptr + 27) + *(ptr + 28) + *(ptr + 29);
+				sumEight = sumEight + *(ptr + 21) + *(ptr + 22);
+				sumNine = sumNine + *(ptr + 23) + *(ptr + 24);
 				
 			}
 		// ... and this one. But your inner loop must do the same
@@ -54,7 +52,11 @@ int main(void)
 	//printf("sum: %f\n", sum);
 
 	// You can add some final code between this comment ...
-		sum = sum + sumTwo + sumThree + sumFour + sumFive + sumSix + sumSeven + sumEight + sumNine + sumTen;
+		sum = sum + sumTwo + sumThree + sumFour + sumFive + sumSix + sumSeven + sumEight + sumNine;
+		
+		ptr = NULL;
+		arraySize = NULL;
+		free (array);
 	// ... and this one.
 
 	return 0;
